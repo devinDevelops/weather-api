@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="icons/sun.ico" rel="icon" />
+    <script
+      src="https://kit.fontawesome.com/6c68a2c760.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1>Weather <img class="logo" src="/icons/sun.png" /></h1>
+        <div class="search-box">
+          <input
+            type="text"
+            class="location-input"
+            placeholder="Enter a Location"
+            value="Tampa" />
+          <button class="search-button">
+            <i class="fa-solid fa-magnifying-glass-location fa-2xl"></i>
+          </button>
+        </div>
+        <div>
+          <label for="convert-degrees"
+            ><small>Convert To Fahrenheit: </small></label
+          >
+          <input type="checkbox" class="convert-degrees-input" checked />
+        </div>
+      </header>
+      <main>
+        <div class="weather-card">
+          <div class="card-header">
+            <i class="fa-solid fa-map-pin fa-2xl"></i>
+            <h1 class="location-name"></h1>
+          </div>
+          <div class="condition-container">
+            <img class="weather-condition" src="" alt="Weather condition" />
+            <h2>
+              <span class="temp">&#176;</span>
+            </h2>
+            <span class="condition"></span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
