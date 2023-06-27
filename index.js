@@ -9,7 +9,8 @@ const conditionIMG = document.querySelector('.weather-condition');
 async function getWeather() {
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=5e03bd42c86845dc90d143729232406&q=${locationINPUT.value}&aqi=no`
+      `http://api.weatherapi.com/v1/current.json?key=5e03bd42c86845dc90d143729232406&q=${locationINPUT.value}&aqi=no`,
+      { mode: 'cors' }
     );
     const data = await response.json();
 
